@@ -38,7 +38,7 @@ thalach = st.slider("Maximum Heart Rate Achieved (thalach)", min_value=70, max_v
 exang = st.selectbox("Exercise-Induced Angina (exang)", [0, 1])
 oldpeak = st.slider("ST Depression (oldpeak)", min_value=0.0, max_value=6.2, value=1.0)
 slope = st.selectbox("Slope of the Peak Exercise ST Segment (slope)", [0, 1, 2])
-ca = st.selectbox("Number of Major Vessels Colored by Fluoroscopy (Ca)", [0, 1, 2, 3])
+ca = st.slider("Number of Major Vessels Colored by Fluoroscopy (Ca)", min_value= 0, max_value= 3, value=0)
 thal = st.selectbox("Thallium Stress Test (thal)", [0, 1, 2, 3, 4, 5, 6, 7])
 
 if st.button("Predict"):
